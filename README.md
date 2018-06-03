@@ -1,4 +1,4 @@
-#Elección de pines
+# Elección de pines
 
 ## Modo de operación
 Vamos a trabajar con comunicación SPI, adquiriendo datos de forma continua (SYNC-PDWN='1')
