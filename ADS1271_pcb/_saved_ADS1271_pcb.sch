@@ -106,12 +106,56 @@ Text Label 7400 3250 2    61   ~ 0
 CLK
 Text Label 7400 3350 2    61   ~ 0
 DRBY
-Text Label 5900 2500 0    61   ~ 0
+Text Label 6350 2500 0    61   ~ 0
 DRBY
-Text Label 5900 2800 0    61   ~ 0
+Text Label 6350 2800 0    61   ~ 0
 DOUT
-Text Label 5900 3150 0    61   ~ 0
+Text Label 6350 3150 0    61   ~ 0
 SCLK
-Text Label 5900 3450 0    61   ~ 0
+Text Label 6350 3450 0    61   ~ 0
 CLK
+$Comp
+L R R?
+U 1 1 5B167FA3
+P 6100 2500
+F 0 "R?" V 6180 2500 50  0000 C CNN
+F 1 "R" V 6100 2500 50  0000 C CNN
+F 2 "" V 6030 2500 50  0001 C CNN
+F 3 "" H 6100 2500 50  0001 C CNN
+	1    6100 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B167FD4
+P 6100 2800
+F 0 "R?" V 6180 2800 50  0000 C CNN
+F 1 "R" V 6100 2800 50  0000 C CNN
+F 2 "" V 6030 2800 50  0001 C CNN
+F 3 "" H 6100 2800 50  0001 C CNN
+	1    6100 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B1680B7
+P 6100 3150
+F 0 "R?" V 6180 3150 50  0000 C CNN
+F 1 "R" V 6100 3150 50  0000 C CNN
+F 2 "" V 6030 3150 50  0001 C CNN
+F 3 "" H 6100 3150 50  0001 C CNN
+	1    6100 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 5B1680E5
+P 6100 3450
+F 0 "R?" V 6180 3450 50  0000 C CNN
+F 1 "R" V 6100 3450 50  0000 C CNN
+F 2 "" V 6030 3450 50  0001 C CNN
+F 3 "" H 6100 3450 50  0001 C CNN
+	1    6100 3450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

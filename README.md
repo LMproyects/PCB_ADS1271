@@ -27,3 +27,8 @@ Vamos a trabajar con comunicación SPI, adquiriendo datos de forma continua (SYN
 3. Socket pila 3.3v
 4. Pines rectos 2 mm.
 5. 
+
+## Diseño del esquematico
+Para el diseño del esquemático que será utilizado en el PCB de prueba, se tiene en cuenta el circuito recomendado por el fabricante Texas Instruments. Ver el circuito a continuación.
+
+!(Imagen_circuito)[]
