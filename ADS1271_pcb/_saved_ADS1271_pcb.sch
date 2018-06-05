@@ -77,4 +77,41 @@ Wire Wire Line
 	3850 4350 3900 4350
 Wire Wire Line
 	3900 4350 3900 4200
+$Comp
+L Conn_01x06_Male J?
+U 1 1 5B16767B
+P 7400 3050
+F 0 "J?" H 7450 3400 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 7400 2650 50  0000 C CNN
+F 2 "" H 7400 3050 50  0001 C CNN
+F 3 "" H 7400 3050 50  0001 C CNN
+	1    7400 3050
+	1    0    0    -1  
+$EndComp
+Text Label 7400 2850 2    60   ~ 0
+DVDD
+Text Label 5250 1900 1    60   ~ 0
+DVDD
+Text Label 7400 2950 2    60   ~ 0
+DGND
+Text Label 5350 4200 3    60   ~ 0
+DGND
+Text Notes 7000 2600 0    79   ~ 0
+Pines FPGA\n
+Text Label 7400 3050 2    61   ~ 0
+DOUT
+Text Label 7400 3150 2    61   ~ 0
+SCLK
+Text Label 7400 3250 2    61   ~ 0
+CLK
+Text Label 7400 3350 2    61   ~ 0
+DRBY
+Text Label 5900 2500 0    61   ~ 0
+DRBY
+Text Label 5900 2800 0    61   ~ 0
+DOUT
+Text Label 5900 3150 0    61   ~ 0
+SCLK
+Text Label 5900 3450 0    61   ~ 0
+CLK
 $EndSCHEMATC
