@@ -32,6 +32,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:ADS1271_pcb-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -57,4 +58,23 @@ F 3 "" H 4750 3150 60  0001 C CNN
 	1    4650 3100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Battery BT?
+U 1 1 5B1673E9
+P 4050 5000
+F 0 "BT?" H 4150 5100 50  0000 L CNN
+F 1 "Battery" H 4150 5000 50  0000 L CNN
+F 2 "" V 4050 5060 50  0001 C CNN
+F 3 "" V 4050 5060 50  0001 C CNN
+	1    4050 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4250 5000 4250 4200
+Wire Wire Line
+	3850 5000 3850 4350
+Wire Wire Line
+	3850 4350 3900 4350
+Wire Wire Line
+	3900 4350 3900 4200
 $EndSCHEMATC
