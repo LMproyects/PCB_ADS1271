@@ -72,31 +72,29 @@ $EndComp
 $Comp
 L Conn_01x06_Male J?
 U 1 1 5B16767B
-P 7400 3050
-F 0 "J?" H 7450 3400 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 7400 2650 50  0000 C CNN
-F 2 "" H 7400 3050 50  0001 C CNN
-F 3 "" H 7400 3050 50  0001 C CNN
-	1    7400 3050
+P 7500 3050
+F 0 "J?" H 7550 3400 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 7650 2650 50  0000 C CNN
+F 2 "" H 7500 3050 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+	1    7500 3050
 	1    0    0    -1  
 $EndComp
-Text Label 7400 2850 2    60   ~ 0
+Text Label 7700 3350 0    60   ~ 0
 DVDD
 Text Label 5250 1900 1    60   ~ 0
 DVDD
-Text Label 7400 2950 2    60   ~ 0
+Text Label 7700 3250 0    60   ~ 0
 DGND
-Text Label 5350 4200 3    60   ~ 0
-DGND
-Text Notes 7000 2600 0    79   ~ 0
+Text Notes 7350 2650 0    79   ~ 0
 Pines FPGA\n
-Text Label 7400 3050 2    61   ~ 0
+Text Label 7700 3150 0    61   ~ 0
 DOUT
-Text Label 7400 3150 2    61   ~ 0
+Text Label 7700 3050 0    61   ~ 0
 SCLK
-Text Label 7400 3250 2    61   ~ 0
+Text Label 7700 2950 0    61   ~ 0
 CLK
-Text Label 7400 3350 2    61   ~ 0
+Text Label 7700 2850 0    61   ~ 0
 DRBY
 Text Label 6350 2500 0    61   ~ 0
 DRBY
@@ -163,8 +161,96 @@ F 3 "" H 4650 1650 50  0001 C CNN
 $EndComp
 Text Label 4650 1500 1    60   ~ 0
 DVDD
-Wire Wire Line
-	4650 1900 4650 1800
+$Comp
+L C C?
+U 1 1 5B19F27A
+P 3450 3100
+F 0 "C?" H 3475 3200 50  0000 L CNN
+F 1 "1nF" H 3475 3000 50  0000 L CNN
+F 2 "" H 3488 2950 50  0001 C CNN
+F 3 "" H 3450 3100 50  0001 C CNN
+	1    3450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5B1A1201
+P 2850 3000
+F 0 "#PWR?" H 2850 2750 50  0001 C CNN
+F 1 "GNDA" H 2850 2850 50  0000 C CNN
+F 2 "" H 2850 3000 50  0001 C CNN
+F 3 "" H 2850 3000 50  0001 C CNN
+	1    2850 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5B1A1242
+P 3150 2900
+F 0 "C?" H 3175 3000 50  0000 L CNN
+F 1 "100pF" H 3175 2800 50  0000 L CNN
+F 2 "" H 3188 2750 50  0001 C CNN
+F 3 "" H 3150 2900 50  0001 C CNN
+	1    3150 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B1A185C
+P 3150 3300
+F 0 "C?" H 3175 3400 50  0000 L CNN
+F 1 "100pF" H 3175 3200 50  0000 L CNN
+F 2 "" H 3188 3150 50  0001 C CNN
+F 3 "" H 3150 3300 50  0001 C CNN
+	1    3150 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5B1A18FF
+P 2850 3400
+F 0 "#PWR?" H 2850 3150 50  0001 C CNN
+F 1 "GNDA" H 2850 3250 50  0000 C CNN
+F 2 "" H 2850 3400 50  0001 C CNN
+F 3 "" H 2850 3400 50  0001 C CNN
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5B1A6982
+P 3500 3750
+F 0 "#PWR?" H 3500 3500 50  0001 C CNN
+F 1 "GNDA" H 3500 3600 50  0000 C CNN
+F 2 "" H 3500 3750 50  0001 C CNN
+F 3 "" H 3500 3750 50  0001 C CNN
+	1    3500 3750
+	1    0    0    -1  
+$EndComp
+Text Label 5350 4200 3    60   ~ 0
+DGND
+$Comp
+L C C?
+U 1 1 5B1AB96E
+P 3300 2450
+F 0 "C?" H 3325 2550 50  0000 L CNN
+F 1 "10uF" H 3325 2350 50  0000 L CNN
+F 2 "" H 3338 2300 50  0001 C CNN
+F 3 "" H 3300 2450 50  0001 C CNN
+	1    3300 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L C C?
+U 1 1 5B1ABAA9
+P 3300 2150
+F 0 "C?" H 3325 2250 50  0000 L CNN
+F 1 "100nF" H 3325 2050 50  0000 L CNN
+F 2 "" H 3338 2000 50  0001 C CNN
+F 3 "" H 3300 2150 50  0001 C CNN
+	1    3300 2150
+	0    1    1    0   
+$EndComp
 Wire Wire Line
 	5950 2500 5900 2500
 Wire Wire Line
@@ -187,4 +273,125 @@ Wire Wire Line
 	3850 4850 3850 4200
 Wire Wire Line
 	3850 4200 3900 4200
+Wire Wire Line
+	3300 3300 3600 3300
+Wire Wire Line
+	3450 3300 3450 3250
+Wire Wire Line
+	3300 2900 3600 2900
+Wire Wire Line
+	3450 2900 3450 2950
+Wire Wire Line
+	2600 2900 3000 2900
+Wire Wire Line
+	2850 2900 2850 3000
+Connection ~ 3450 2900
+Connection ~ 3450 3300
+Wire Wire Line
+	2600 3300 3000 3300
+Wire Wire Line
+	2850 3300 2850 3400
+Wire Wire Line
+	2350 3050 2600 3050
+Wire Wire Line
+	2600 3050 2600 2900
+Connection ~ 2850 2900
+Wire Wire Line
+	2350 3250 2600 3250
+Wire Wire Line
+	2600 3250 2600 3300
+Connection ~ 2850 3300
+Wire Wire Line
+	3500 3750 3500 3650
+Wire Wire Line
+	3500 3650 3600 3650
+Wire Wire Line
+	3450 2450 3550 2450
+Wire Wire Line
+	3550 1800 3550 2650
+Wire Wire Line
+	3550 2650 3600 2650
+Wire Wire Line
+	3550 2150 3450 2150
+Connection ~ 3550 2450
+$Comp
+L GNDA #PWR?
+U 1 1 5B1ADA12
+P 3000 2600
+F 0 "#PWR?" H 3000 2350 50  0001 C CNN
+F 1 "GNDA" H 3000 2450 50  0000 C CNN
+F 2 "" H 3000 2600 50  0001 C CNN
+F 3 "" H 3000 2600 50  0001 C CNN
+	1    3000 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDA #PWR?
+U 1 1 5B1ADA7F
+P 3000 2250
+F 0 "#PWR?" H 3000 2000 50  0001 C CNN
+F 1 "GNDA" H 3000 2100 50  0000 C CNN
+F 2 "" H 3000 2250 50  0001 C CNN
+F 3 "" H 3000 2250 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 2450 3000 2450
+Wire Wire Line
+	3000 2450 3000 2600
+Wire Wire Line
+	3150 2150 3000 2150
+Wire Wire Line
+	3000 2150 3000 2250
+$Comp
+L +BATT #PWR?
+U 1 1 5B1AF906
+P 3550 1800
+F 0 "#PWR?" H 3550 1650 50  0001 C CNN
+F 1 "+BATT" H 3550 1940 50  0000 C CNN
+F 2 "" H 3550 1800 50  0001 C CNN
+F 3 "" H 3550 1800 50  0001 C CNN
+	1    3550 1800
+	1    0    0    -1  
+$EndComp
+Connection ~ 3550 2150
+$Comp
+L Jumper_NC_Dual JP?
+U 1 1 5B1B102E
+P 4000 1150
+F 0 "JP?" H 4050 1050 50  0000 L CNN
+F 1 "Jumper_NC_Dual" H 4000 1250 50  0000 C BNN
+F 2 "" H 4000 1150 50  0001 C CNN
+F 3 "" H 4000 1150 50  0001 C CNN
+	1    4000 1150
+	1    0    0    -1  
+$EndComp
+Text Label 4250 1150 0    60   ~ 0
+DVDD
+Text Label 3750 1150 2    60   ~ 0
+DGND
+Wire Wire Line
+	4000 1250 4000 1900
+Text Label 4300 1900 1    60   ~ 0
+DGND
+Text Label 4950 1900 1    60   ~ 0
+DGND
+$Comp
+L CONN_01X02_MALE J?
+U 1 1 5B1A4D1B
+P 2050 3150
+F 0 "J?" H 2050 3325 50  0000 C CNN
+F 1 "CONN_01X02_MALE" H 2050 2950 50  0000 C CNN
+F 2 "" H 2050 3250 50  0001 C CNN
+F 3 "" H 2050 3250 50  0001 C CNN
+	1    2050 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1800 4650 1900
+Text Notes 1000 3200 0    60   ~ 0
+Entrada analogica \nDiferencial
+Text Notes 3500 950  0    60   ~ 0
+Seleccion de modo:\nDVDD -> Low Power\nDGND -> High Speed\nfloat -> High Resolution
 $EndSCHEMATC
