@@ -72,29 +72,29 @@ $EndComp
 $Comp
 L Conn_01x06_Male J?
 U 1 1 5B16767B
-P 7400 3050
-F 0 "J?" H 7450 3400 50  0000 C CNN
-F 1 "Conn_01x06_Male" H 7400 2650 50  0000 C CNN
-F 2 "" H 7400 3050 50  0001 C CNN
-F 3 "" H 7400 3050 50  0001 C CNN
-	1    7400 3050
+P 7500 3050
+F 0 "J?" H 7550 3400 50  0000 C CNN
+F 1 "Conn_01x06_Male" H 7650 2650 50  0000 C CNN
+F 2 "" H 7500 3050 50  0001 C CNN
+F 3 "" H 7500 3050 50  0001 C CNN
+	1    7500 3050
 	1    0    0    -1  
 $EndComp
-Text Label 7400 2850 2    60   ~ 0
+Text Label 7700 3350 0    60   ~ 0
 DVDD
 Text Label 5250 1900 1    60   ~ 0
 DVDD
-Text Label 7400 2950 2    60   ~ 0
+Text Label 7700 3250 0    60   ~ 0
 DGND
-Text Notes 7000 2600 0    79   ~ 0
+Text Notes 7350 2650 0    79   ~ 0
 Pines FPGA\n
-Text Label 7400 3050 2    61   ~ 0
+Text Label 7700 3150 0    61   ~ 0
 DOUT
-Text Label 7400 3150 2    61   ~ 0
+Text Label 7700 3050 0    61   ~ 0
 SCLK
-Text Label 7400 3250 2    61   ~ 0
+Text Label 7700 2950 0    61   ~ 0
 CLK
-Text Label 7400 3350 2    61   ~ 0
+Text Label 7700 2850 0    61   ~ 0
 DRBY
 Text Label 6350 2500 0    61   ~ 0
 DRBY
@@ -151,15 +151,15 @@ $EndComp
 $Comp
 L R R?
 U 1 1 5B168302
-P 4650 1350
-F 0 "R?" V 4730 1350 50  0000 C CNN
-F 1 "50" V 4650 1350 50  0000 C CNN
-F 2 "" V 4580 1350 50  0001 C CNN
-F 3 "" H 4650 1350 50  0001 C CNN
-	1    4650 1350
+P 4650 1650
+F 0 "R?" V 4730 1650 50  0000 C CNN
+F 1 "50" V 4650 1650 50  0000 C CNN
+F 2 "" V 4580 1650 50  0001 C CNN
+F 3 "" H 4650 1650 50  0001 C CNN
+	1    4650 1650
 	-1   0    0    1   
 $EndComp
-Text Label 4650 1200 1    60   ~ 0
+Text Label 4650 1500 1    60   ~ 0
 DVDD
 $Comp
 L C C?
@@ -251,8 +251,6 @@ F 3 "" H 3300 2150 50  0001 C CNN
 	1    3300 2150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	4650 1500 4650 1900
 Wire Wire Line
 	5950 2500 5900 2500
 Wire Wire Line
@@ -369,28 +367,16 @@ F 3 "" H 4000 1150 50  0001 C CNN
 	1    4000 1150
 	1    0    0    -1  
 $EndComp
-Text Label 4450 1000 2    60   ~ 0
+Text Label 4250 1150 0    60   ~ 0
 DVDD
-Wire Wire Line
-	4450 1000 4450 1150
-Wire Wire Line
-	4450 1150 4250 1150
-Text Label 3650 1350 2    60   ~ 0
+Text Label 3750 1150 2    60   ~ 0
 DGND
-Wire Wire Line
-	3650 1150 3750 1150
-Wire Wire Line
-	3650 1350 3650 1150
 Wire Wire Line
 	4000 1250 4000 1900
-Text Label 4300 1600 2    60   ~ 0
+Text Label 4300 1900 1    60   ~ 0
 DGND
-Wire Wire Line
-	4300 1900 4300 1600
-Text Label 4950 1600 2    60   ~ 0
+Text Label 4950 1900 1    60   ~ 0
 DGND
-Wire Wire Line
-	4950 1600 4950 1900
 $Comp
 L CONN_01X02_MALE J?
 U 1 1 5B1A4D1B
@@ -402,4 +388,10 @@ F 3 "" H 2050 3250 50  0001 C CNN
 	1    2050 3150
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4650 1800 4650 1900
+Text Notes 1000 3200 0    60   ~ 0
+Entrada analogica \nDiferencial
+Text Notes 3500 950  0    60   ~ 0
+Seleccion de modo:\nDVDD -> Low Power\nDGND -> High Speed\nfloat -> High Resolution
 $EndSCHEMATC

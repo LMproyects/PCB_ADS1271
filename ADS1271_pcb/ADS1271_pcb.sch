@@ -175,45 +175,45 @@ $EndComp
 $Comp
 L GNDA #PWR?
 U 1 1 5B1A1201
-P 2850 3000
-F 0 "#PWR?" H 2850 2750 50  0001 C CNN
-F 1 "GNDA" H 2850 2850 50  0000 C CNN
-F 2 "" H 2850 3000 50  0001 C CNN
-F 3 "" H 2850 3000 50  0001 C CNN
-	1    2850 3000
+P 2800 3700
+F 0 "#PWR?" H 2800 3450 50  0001 C CNN
+F 1 "GNDA" H 2800 3550 50  0000 C CNN
+F 2 "" H 2800 3700 50  0001 C CNN
+F 3 "" H 2800 3700 50  0001 C CNN
+	1    2800 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L C C?
 U 1 1 5B1A1242
-P 3150 2900
-F 0 "C?" H 3175 3000 50  0000 L CNN
-F 1 "100pF" H 3175 2800 50  0000 L CNN
-F 2 "" H 3188 2750 50  0001 C CNN
-F 3 "" H 3150 2900 50  0001 C CNN
-	1    3150 2900
-	0    1    1    0   
+P 2800 3550
+F 0 "C?" H 2825 3650 50  0000 L CNN
+F 1 "100pF" H 2900 3550 50  0000 L CNN
+F 2 "" H 2838 3400 50  0001 C CNN
+F 3 "" H 2800 3550 50  0001 C CNN
+	1    2800 3550
+	-1   0    0    1   
 $EndComp
 $Comp
 L C C?
 U 1 1 5B1A185C
-P 3150 3300
-F 0 "C?" H 3175 3400 50  0000 L CNN
-F 1 "100pF" H 3175 3200 50  0000 L CNN
-F 2 "" H 3188 3150 50  0001 C CNN
-F 3 "" H 3150 3300 50  0001 C CNN
-	1    3150 3300
-	0    1    1    0   
+P 3150 3550
+F 0 "C?" H 3175 3650 50  0000 L CNN
+F 1 "100pF" H 2800 3550 50  0000 L CNN
+F 2 "" H 3188 3400 50  0001 C CNN
+F 3 "" H 3150 3550 50  0001 C CNN
+	1    3150 3550
+	-1   0    0    1   
 $EndComp
 $Comp
 L GNDA #PWR?
 U 1 1 5B1A18FF
-P 2850 3400
-F 0 "#PWR?" H 2850 3150 50  0001 C CNN
-F 1 "GNDA" H 2850 3250 50  0000 C CNN
-F 2 "" H 2850 3400 50  0001 C CNN
-F 3 "" H 2850 3400 50  0001 C CNN
-	1    2850 3400
+P 3150 3700
+F 0 "#PWR?" H 3150 3450 50  0001 C CNN
+F 1 "GNDA" H 3150 3550 50  0000 C CNN
+F 2 "" H 3150 3700 50  0001 C CNN
+F 3 "" H 3150 3700 50  0001 C CNN
+	1    3150 3700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -274,39 +274,30 @@ Wire Wire Line
 Wire Wire Line
 	3850 4200 3900 4200
 Wire Wire Line
-	3300 3300 3600 3300
+	2600 3300 3600 3300
 Wire Wire Line
 	3450 3300 3450 3250
 Wire Wire Line
-	3300 2900 3600 2900
+	2600 2900 3600 2900
 Wire Wire Line
 	3450 2900 3450 2950
-Wire Wire Line
-	2600 2900 3000 2900
-Wire Wire Line
-	2850 2900 2850 3000
 Connection ~ 3450 2900
 Connection ~ 3450 3300
-Wire Wire Line
-	2600 3300 3000 3300
-Wire Wire Line
-	2850 3300 2850 3400
 Wire Wire Line
 	2350 3050 2600 3050
 Wire Wire Line
 	2600 3050 2600 2900
-Connection ~ 2850 2900
+Connection ~ 2800 2900
 Wire Wire Line
 	2350 3250 2600 3250
 Wire Wire Line
 	2600 3250 2600 3300
-Connection ~ 2850 3300
 Wire Wire Line
 	3500 3750 3500 3650
 Wire Wire Line
 	3500 3650 3600 3650
 Wire Wire Line
-	3450 2450 3550 2450
+	3550 2450 3450 2450
 Wire Wire Line
 	3550 1800 3550 2650
 Wire Wire Line
@@ -394,4 +385,17 @@ Text Notes 1000 3200 0    60   ~ 0
 Entrada analogica \nDiferencial
 Text Notes 3500 950  0    60   ~ 0
 Seleccion de modo:\nDVDD -> Low Power\nDGND -> High Speed\nfloat -> High Resolution
+Connection ~ 3150 3300
+Wire Wire Line
+	3150 3300 3150 3400
+Wire Wire Line
+	2800 2900 2800 3400
+Text Notes 2600 5350 0    60   ~ 0
+Analizar alimentación analógica: Como la implementamos? Bateria, con tensión regulada?\n
+Text Notes 7400 7500 0    60   ~ 0
+PCB prueba para ADC ADS1271\n
+Text Notes 10600 7650 0    60   ~ 0
+V 0.2\n
+Text Notes 8150 7650 0    60   ~ 0
+08/06/18\n
 $EndSCHEMATC
