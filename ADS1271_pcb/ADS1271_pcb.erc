@@ -1,0 +1,9 @@
+Informe ERC (7/7/2018 8:07:55 p. m., Codificación UTF8 )
+
+***** Hoja /
+ErrType(3): Pin conectado a otros pines pero sin alimentación
+    @ (91,44mm,67,31mm): El pin 4 (Entrada de alimentación) del componente U1 no está alimentado (red 2).
+ErrType(3): Pin conectado a otros pines pero sin alimentación
+    @ (133,35mm,48,26mm): El pin 13 (Entrada de alimentación) del componente U1 no está alimentado (red 14).
+
+**Mensajes ERC: 2. Errores0, Avisos 2
