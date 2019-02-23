@@ -29,6 +29,6 @@ Vamos a trabajar con comunicación SPI, adquiriendo datos de forma continua (SYN
 5. 
 
 ## Diseño del esquematico
-Para el diseño del esquemático que será utilizado en el PCB de prueba, se tiene en cuenta el circuito recomendado por el fabricante Texas Instruments. Ver el circuito a continuación.
+Para el diseño del esquemático que será utilizado en el PCB de prueba, se tiene en cuenta el circuito recomendado por el fabricante Texas Instruments. A continuación, puede ver el circuito mencionado.
 
 ![Imagen_circuito](https://github.com/LMproyects/PCB_ADS1271/blob/master/images/Circuito_Recomendado.PNG)
