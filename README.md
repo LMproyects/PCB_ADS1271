@@ -32,3 +32,9 @@ Vamos a trabajar con comunicación SPI, adquiriendo datos de forma continua (SYN
 Para el diseño del esquemático que será utilizado en el PCB de prueba, se tiene en cuenta el circuito recomendado por el fabricante Texas Instruments. A continuación, puede verse el circuito mencionado.
 
 ![Imagen_circuito](https://github.com/LMproyects/PCB_ADS1271/blob/master/images/Circuito_Recomendado.PNG)
+
+## Circuitos de entrada
+
+Para la entrada diferencial, el fabricante recomienda dos configuraciones dependiendo el modo en el que se quiera utilizar el ADC.
+
+![Imagen_circuito_entrada_diferencial](https://github.com/LMproyects/PCB_ADS1271/blob/master/images/Circuito_Recomendado_entrada_diferencial.PNG)
