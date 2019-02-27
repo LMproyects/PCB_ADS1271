@@ -235,8 +235,6 @@ Text Label 3750 1150 2    60   ~ 0
 DGND
 Text Label 4300 1900 1    60   ~ 0
 DGND
-Text Label 4950 1900 1    60   ~ 0
-DGND
 $Comp
 L CONN_01X02_MALE J2
 U 1 1 5B1A4D1B
@@ -258,31 +256,9 @@ Text Notes 10600 7650 0    60   ~ 0
 V 0.2\n
 Text Notes 8150 7650 0    60   ~ 0
 08/06/18\n
-$Comp
-L C C7
-U 1 1 5B46F37D
-P 5800 1600
-F 0 "C7" H 5825 1700 50  0000 L CNN
-F 1 "10uF" H 5825 1500 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5838 1450 50  0001 C CNN
-F 3 "" H 5800 1600 50  0001 C CNN
-	1    5800 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L C C8
-U 1 1 5B46F720
-P 6150 1600
-F 0 "C8" H 6175 1700 50  0000 L CNN
-F 1 "100nF" H 6175 1500 50  0000 L CNN
-F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 6188 1450 50  0001 C CNN
-F 3 "" H 6150 1600 50  0001 C CNN
-	1    6150 1600
-	-1   0    0    1   
-$EndComp
-Text Label 5800 1750 3    60   ~ 0
+Text Label 5790 1850 3    60   ~ 0
 DGND
-Text Label 6150 1750 3    60   ~ 0
+Text Label 6130 1830 3    60   ~ 0
 DGND
 $Comp
 L CP1 C2
@@ -362,7 +338,7 @@ L LM336z2.5 U2
 U 1 1 5C74B364
 P 3310 4610
 F 0 "U2" H 3241 4531 20  0000 C CNN
-F 1 "LM336z2.5" H 3316 4683 20  0000 C CNN
+F 1 "LM336z2.5" H 3310 4710 39  0000 C CNN
 F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 3310 4610 60  0001 C CNN
 F 3 "" H 3310 4610 60  0001 C CNN
 	1    3310 4610
@@ -430,17 +406,11 @@ Wire Wire Line
 Wire Wire Line
 	2800 2900 2800 3400
 Wire Wire Line
-	5800 1450 5800 1400
-Wire Wire Line
 	5250 1400 6350 1400
 Wire Wire Line
-	6150 1400 6150 1450
-Wire Wire Line
 	5250 1400 5250 1900
-Connection ~ 5800 1400
 Wire Wire Line
 	6350 1400 6350 1350
-Connection ~ 6150 1400
 Wire Wire Line
 	3900 4450 3950 4450
 Wire Wire Line
@@ -524,4 +494,36 @@ Wire Wire Line
 	3620 4610 3620 4350
 Connection ~ 3620 4350
 Connection ~ 2450 1650
+Text Label 4950 1800 1    60   ~ 0
+DGND
+Wire Wire Line
+	4950 1800 4950 1900
+$Comp
+L CP1 C?
+U 1 1 5C7674F1
+P 5790 1700
+F 0 "C?" H 5815 1800 50  0000 L CNN
+F 1 "10 uf" H 5815 1600 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 5790 1700 50  0001 C CNN
+F 3 "" H 5790 1700 50  0001 C CNN
+	1    5790 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP1 C?
+U 1 1 5C767748
+P 6130 1680
+F 0 "C?" H 6155 1780 50  0000 L CNN
+F 1 "0.1 uF" H 6155 1580 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D5.0mm_P2.50mm" H 6130 1680 50  0001 C CNN
+F 3 "" H 6130 1680 50  0001 C CNN
+	1    6130 1680
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5790 1550 5790 1400
+Connection ~ 5790 1400
+Wire Wire Line
+	6130 1530 6130 1400
+Connection ~ 6130 1400
 $EndSCHEMATC
