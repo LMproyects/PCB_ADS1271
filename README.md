@@ -22,11 +22,19 @@ Vamos a trabajar con comunicación SPI, adquiriendo datos de forma continua (SYN
 * **SYNC/PDWN:** Se mantiene este valor en alto, para poder trabajar con adquisición de datos de manera continua. 
 
 ## Componentes necesarios
-1. ADS1271: ADC de 24 bits Delta&Sigma con entrada y referencia diferencial.
-2. 6 pines con curva de 90º.
-3. Socket pila 3.3v
-4. Pines rectos 2 mm.
-5. 
+- 1 ADS1271: ADC de 24 bits Delta&Sigma con entrada y referencia diferencial.
+- 6 pines con curva de 90º.
+- 1 LM7805
+- 1 Capacitor electrolítico 0.33 uF, 25V.
+- 2 Capacitores electrolítico 0.1 uF
+- 2 Capacitores electrolítico 10 uF
+- 2 Capacitores cerámica 100 pF
+- 1 Capacitores cerámica 1 nF
+- 5 Resistencias de 50 Ohmios
+- 1 Resistencia de 680 Ohmios
+- 1 LM336z2.5 (se puede cambiar por zener de 2.5 v)
+- 2 pines 2.54 mm
+- 2 pines 2.54 mm
 
 ## Diseño del esquematico
 Para el diseño del esquemático que será utilizado en el PCB de prueba, se tiene en cuenta el circuito recomendado por el fabricante Texas Instruments. A continuación, puede verse el circuito mencionado.
